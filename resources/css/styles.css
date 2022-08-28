@@ -1,0 +1,342 @@
+/*
+Codecademy Challenge Project: Company Home Page with Flexbox
+Author: Laurie M. Rauch
+Author URL: http://lauriemrauch.com
+
+Photo by Conscious Design on Unsplash: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+Photo by Shashi Chaturvedula on Unsplash: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+Photo by Jared Rice on Unsplash: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+Photo by Ilona Frey on Unsplash: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+Photo by LOGAN WEAVER on Unsplash: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+  
+Photo by Kate Mishchankova on Unsplash: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+Photo by sippakorn yamkasikorn on Unsplash: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+Photo by Kari Shea on Unsplash: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+Photo by Kaylee Garrett on Unsplash: https://unsplash.com/s/photos/yoga-class?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+Photo by Jose Vazquez on Unsplash: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+Colors:
+    Dark Pink: #fb77a8
+    Light Pink: #f9c3d0
+    Lilac: #b05389
+    Black: #0f070b
+    White: #fff
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,300;0,600;1,300;1,600&family=Qwitcher+Grypen&display=swap');
+
+html,
+body {
+    color: #0f070b;
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Anton', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 3rem;
+    letter-spacing: 0.001rem;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid #0f070b;
+    color: #0f070b;
+    margin: 1rem 0;
+    padding: 0.25rem 0.5rem;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+}
+
+.wrap {
+    margin: auto;
+    max-width: 65rem;
+    width: 90%;
+}
+
+
+nav ul {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+}
+
+nav li {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+nav img {
+    display: inline-block;
+    height: 65px;
+    width: auto;
+}
+
+nav a {
+    color: #030102;
+}
+
+nav a:hover {
+    color: #b05389;
+}
+
+#hero {
+    background: url(../img/yoga-class.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 5rem;
+    padding-top: calc(5rem + 85px);
+}
+
+.hero-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: auto;
+    padding: 5rem;
+    text-align: center;
+    width: 40%;
+}
+
+#classes {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+#classes .classes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.class-item {
+    overflow: hidden;
+    margin: 0.75rem;
+    position: relative;
+    text-align: center;
+}
+
+.class-item:first-child {
+    margin-left: 0%;
+}
+
+.class-item:last-child {
+    margin-right: 0;
+}
+
+.class-item-img {
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.class-item-img img {
+    display: block;
+    max-width: 100%;
+}
+
+.class-item-caption {
+    color: white;
+    font-family: 'Anton';
+    height: 100%;
+    left: 0;
+    letter-spacing: 1px;
+    position: absolute;
+    text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    top: calc(50% - 0.5rem);
+    width: 100%;
+}
+
+#join {
+    background-color: #0f070b;
+    color: white;
+    margin-bottom: 4rem;
+    padding: 3rem 0;
+}
+
+#join .join {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.join p {
+    flex: 0 0 40%;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.join input {
+    border: 1px solid #aaa;
+    padding: 0.5rem;
+}
+
+#online {
+    padding: 4rem 0;
+}
+
+.online {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.online-img {
+    flex: 0 0 47.5%;
+}
+
+.online-img img {
+    display: block;
+    width: 100%;
+}
+
+#inperson {
+    background: url(../img/liveclasses.jpg) center center no-repeat;
+    background-size: cover;
+    margin: 4rem 0 0;
+    min-height: 500px;
+}
+
+.inperson {
+    align-items: center;
+    display: flex;
+    height: 500px;
+    justify-content: end;
+}
+
+.inperson-text {
+    flex: 0 0 50%;
+    text-align: right;
+}
+
+footer {
+    background-color: #f5eaf1;
+    padding: 2rem 0;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social button {
+    border: none;
+    font-size: 2rem;
+}
+
+.social button a:hover {
+    color: #b05389;
+}
+
+footer p {
+    margin: 1.75rem 0 1rem;
+    text-align: center;
+}
+
+.hideme,
+.hideimg {
+    display: none;
+}
+
+@media only screen and (max-width: 760px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 1.25;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    input {
+        margin-bottom: 0.75rem;
+    }
+
+    .classes {
+        flex-wrap: wrap;
+    }
+
+    .class-item {
+        flex-basis: 45%;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0.75rem 2.5%;
+    }
+
+    .online {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .online-text,
+    .online-img {
+        flex-basis: 0 0 100%;
+    }
+
+    #inperson {
+        background-image: none;
+    }
+
+    .inperson {
+        flex-direction: column;
+    }
+
+    .inperson-text {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .hideimg {
+        display: block;
+    }
+
+}
